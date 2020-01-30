@@ -4,9 +4,11 @@ package com.patterns;
  * Bridge pattern.
  */
 public abstract class DailyMenu {
-    protected IMenu IMenu;
+    protected IMenu menu;
+
     public DailyMenu(IMenu m) {
-        IMenu = m;}
+        menu = m;
+    }
 
     /**
      * Template-method with abstract method showType().
@@ -14,7 +16,7 @@ public abstract class DailyMenu {
     public abstract void showType();
     public void showDetails() {
         showType();
-        IMenu.setMenu();
+        menu.setMenu();
     }
 
 }
