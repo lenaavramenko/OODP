@@ -1,5 +1,8 @@
 package com.patterns.state;
 
+/**
+ * State pattern.
+ */
 public class Order {
 
         private OrderState currentState;

@@ -1,5 +1,8 @@
 package com.patterns.state;
 
+/**
+ * State pattern.
+ */
 public class isReady extends OrderState {
     @Override
     public void changeState() {

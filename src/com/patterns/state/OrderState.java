@@ -1,5 +1,8 @@
 package com.patterns.state;
 
+/**
+ * State pattern.
+ */
 public abstract class OrderState {
 
     public abstract void changeState();

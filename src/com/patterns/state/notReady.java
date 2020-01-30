@@ -1,5 +1,8 @@
 package com.patterns.state;
 
+/**
+ * State pattern.
+ */
 public class notReady extends OrderState {
     public notReady(Order order) {
         super(order);
