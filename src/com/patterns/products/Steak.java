@@ -1,8 +1,8 @@
-package com.patterns.food;
+package com.patterns.products;
 
-import com.patterns.Menu;
+import com.patterns.IMenu;
 
-public class Steak implements Menu {
+public class Steak implements IMenu {
     @Override
     public void setMenu() {
         System.out.println("Steak");

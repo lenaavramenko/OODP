@@ -1,13 +1,20 @@
 package com.patterns;
 
+/**
+ * Bridge pattern.
+ */
+public abstract class DailyMenu {
+    protected IMenu IMenu;
+    public DailyMenu(IMenu m) {
+        IMenu = m;}
 
-public abstract class DayliMenu {
-    protected Menu menu;
-    public DayliMenu(Menu m) {menu = m;}
+    /**
+     * Template-method with abstract method showType().
+     */
     public abstract void showType();
-    void showDetails() {
+    public void showDetails() {
         showType();
-        menu.setMenu();
+        IMenu.setMenu();
     }
 
 }
